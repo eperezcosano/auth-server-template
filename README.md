@@ -1,15 +1,25 @@
 # API Server JWT Auth
 A basic template for a server token authorization
 
+## Models
+
+### User
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| email | string | User e-mail |
+| pass | string | User password |
+
 ## Routes
 
-| Model | Type | Route | Description | Body JSON |
-| :---:| :---: | --- | --- | --- |
-| USER | GET | /users/all | Get all users | - |
-|  | GET | /users/**:id** | Get user by its id | - |
-|  | POST | /users/ | Create a new user | User model |
-|  | PUT | /users/**:id** | Update an user by its id | User model |
-|  | DELETE | /users/**:id** | Delete an user by its id | - |
+| Method | Auth | Path | Description | Body JSON |
+| :---: | --- | --- | --- | --- |
+| GET | | / | "Hello World" | |
+| POST | | /register | Create a new user | User |
+| POST | | /login | Generates a new JWT | User |
+| GET | JWT | /validate | Validate JWT | |
+| GET | JWT | /dashboard/ | Protected rute | |
+| GET | JWT | /dashboard/users | Get all users | |
 
 
 ## Installation
@@ -18,6 +28,15 @@ Install dependencies:
 
 ```
 npm i
+```
+
+Add .env file:
+
+```
+MONGO_URI=<mongo uri string>
+PORT=<server port listening>
+JW_SECRET=<json web token secret>
+JW_EXPIRATION=<in seconds>
 ```
 
 Run node project:
