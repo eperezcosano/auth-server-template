@@ -6,13 +6,22 @@
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": [],
+  "keywords": ["jwt", "express", "mongo"],
   "author": "Izan Pérez Cosano",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.12"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eperezcosano/auth-server-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eperezcosano/auth-server-template/issues"
+  },
+  "homepage": "https://github.com/eperezcosano/auth-server-template#readme",
+  "description": "A basic template for a server token authorization"
 }
