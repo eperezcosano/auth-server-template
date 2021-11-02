@@ -15,8 +15,8 @@ A basic template for a server token authorization
 | Method | Auth | Path | Description | Body JSON |
 | :---: | --- | --- | --- | --- |
 | GET | | / | "Hello World" | |
-| POST | | /register | Create a new user | User |
-| POST | | /login | Generates a new JWT | User |
+| POST | | /register | Create a new user | [User](https://github.com/eperezcosano/auth-server-template#user) |
+| POST | | /login | Generates a new JWT | [User](https://github.com/eperezcosano/auth-server-template#user) |
 | GET | JWT | /validate | Validate JWT | |
 | GET | JWT | /dashboard/ | Protected route | |
 | GET | JWT | /dashboard/users | Get all users | |
