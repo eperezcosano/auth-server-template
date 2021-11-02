@@ -18,7 +18,7 @@ A basic template for a server token authorization
 | POST | | /register | Create a new user | User |
 | POST | | /login | Generates a new JWT | User |
 | GET | JWT | /validate | Validate JWT | |
-| GET | JWT | /dashboard/ | Protected rute | |
+| GET | JWT | /dashboard/ | Protected route | |
 | GET | JWT | /dashboard/users | Get all users | |
 
 
