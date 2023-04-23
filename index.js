@@ -7,8 +7,10 @@ const app = express()
 const server = http.createServer(app)
 const router = require('./routes/index')
 
+app.set('trust proxy', true)
 app.use(express.json())
-app.use('/', router)
+app.use(express.urlencoded({ extended: false }))
+app.use('/api', router)
 
 mongoose.connect(process.env.MONGO_URI,
     {

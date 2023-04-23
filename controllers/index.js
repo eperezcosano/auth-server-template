@@ -5,7 +5,7 @@ require('../models/user')
 const User = mongoose.model('User')
 
 /**
- * Generates random string of characters i.e salt
+ * Generates random string of characters i.e. salt
  * @function
  * @returns salt (hexadecimal)
  */

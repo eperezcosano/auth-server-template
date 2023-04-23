@@ -1,27 +1,19 @@
 {
   "name": "auth-server-template",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "Basic Auth Server",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "local": "node index.js",
+    "prod": "xvfb-run -a node index.js"
   },
-  "keywords": ["jwt", "express", "mongo"],
+  "keywords": ["auth-server", "express", "mongo"],
   "author": "Izan Pérez Cosano",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^10.0.0",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.0",
-    "mongoose": "^6.4.6"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eperezcosano/auth-server-template.git"
-  },
-  "bugs": {
-    "url": "https://github.com/eperezcosano/auth-server-template/issues"
-  },
-  "homepage": "https://github.com/eperezcosano/auth-server-template#readme",
-  "description": "A basic template for a server token authorization"
+    "mongoose": "^7.0.4"
+  }
 }
