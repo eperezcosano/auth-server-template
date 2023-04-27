@@ -89,9 +89,6 @@ async function registerUser(req, res) {
             salt: salt
         })
 
-        // Create code activation
-        const code = generateSalt()
-
         // Save it in the database
         await user.save()
 
