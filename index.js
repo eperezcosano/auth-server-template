@@ -26,5 +26,5 @@ mongoose.connect(process.env.MONGO_URI,
 })
 
 server.listen(process.env.PORT, 'localhost',() => {
-    console.log(`Listening on http://localhost:${process.env.PORT}`)
+    console.log(`Listening on http://localhost:${process.env.PORT}/api`)
 })
